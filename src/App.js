@@ -75,11 +75,7 @@ function App() {
       .catch((error) => {
         alert(error.message);
       });
-      addDoc(collection(db, 'users'), {
-        timestamp: serverTimestamp(),
-        email: email,
-        password: password,
-      });
+      
       setEmail('')
       setPassword('')
       setUsername('')
